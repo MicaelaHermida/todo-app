@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.text{
+    font-family: 'Raleway', sans-serif;
+}
+.taskDescription{
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(142, 142, 142);
+
+}
+
+/*.rounded-button{
+    border-radius: 10% 10% 5% 5% !important;
+}*/
