@@ -18,28 +18,24 @@
     </nav>
     -->
     <div class="container-fluid">
-        <div class="row my-5 py-5">
-            <div class="col-12 d-flex justify-content-center">
-                <h1 class="title-text" style="color: rgba(242, 226, 255, 0.51); text-shadow: 2px 2px rgba(0, 0, 0, 0.436)">YOUR TO-DO LIST:</h1>
+        <div class="lightModeContainer my-3 py-3 px-5 d-flex flex-row-reverse">
+            <div id="lightModeButton" class="light-mode-button">
+                <div class="slider transition" id="button"></div>
             </div>
         </div>
-    </div>
-
-    <!--MAIN CONTENT-->
-    <section class="container-fluid">
-        <div class="row pt-5 mx-3"> <!--padding top-->
-            <div class="col-md-3">
-                <div class="card bg-dark opacity-75 shadow-lg">
+        <div class="row my-5 py-5 px-5">
+            <div class="col-md-3 py-5">
+                <div class="card bg-dark opacity-75 shadow-lg" >
                     <div class="card-body bg-dark opacity-50">
-                        <form id="formTask" class="background">
+                        <form id="formTask" class="background h-100 d-inline-block">
                             <div class="form-group text-light border border-info rounded">
                                 <input type="text" id="title" class="form-control text-light opacity-75" style="background-color: black;" placeholder="Add Task" >
                             </div>
                             <div class="form-group text-light border border-info rounded">
-                                <textarea id="description" rows="8" cols="80" class="form-control text-light opacity-75" style="background-color: black;" placeholder="Add description"></textarea>
+                                <textarea id="description" rows="14" cols="80" class="form-control text-light opacity-75" style="background-color: black;" placeholder="Add description"></textarea>
                             </div>
                             <div class="d-grid gap-2 bg-black">
-                                <button type="submit" class="btn btn-outline-info btn-block">
+                                <button type="submit" class="btn btn-info btn-block">
                                     Save
                                 </button>
                             </div>
@@ -47,14 +43,35 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 px-5">
-                <div id="tasks"></div>
-            </div>
-            <div class="col-md-4 px-5">
-                <div id="doneTasks"></div>
+            <div class="col-md-9 my-5">
+                <div class="d-flex justify-content-center">
+                    <h1 class="title-text">YOUR TO-DO LIST:</h1>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6 d-flex justify-content-center text">
+                        <h4>PENDING</h4>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center text">
+                        <h4>DONE</h4>
+                    </div>
+                </div>
+                <div class="container-fluid ">
+                    <div class="row mx-3"> 
+                        <div class="col-md-6 px-5">
+                            <div id="tasks"></div>
+                        </div>
+                        <div class="col-md-6 px-5">
+                            <div id="doneTasks"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        
+    </div>
+
+    <!--MAIN CONTENT-->
+    
 
     <!--SCRIPTS-->
     <script src="./js/task-list.js"></script>

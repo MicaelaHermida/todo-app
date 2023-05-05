@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
@@ -11,7 +10,9 @@
 }
 
 body{
-    background: url(dark-background.png) black;
+    background: url(./assets/dark-background.png) black;
+    background-size: cover;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .text{
@@ -41,7 +42,125 @@ body{
 .title-text{
     font-family: 'Bungee Shade', cursive;
     font-size: 50pt;
+    color: rgba(242, 226, 255, 0.51); text-shadow: 2px 2px rgba(0, 0, 0, 0.436)
 }
+
+.light-mode-button {
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, rgb(98, 140, 255), rgb(104, 51, 137));
+    border-radius: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.transition {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.slider {
+    background-color: rgb(197, 204, 255);
+    border-radius: 100%;
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    margin-right: 4px;
+    animation: return 0.3s linear;
+}
+
+@keyframes translate {
+    from{
+     transform: translateX(100%);
+    }
+    to{
+     transform: translateX(0%);
+    }
+ }
+ @keyframes return {
+     from{
+         transform: translateX(-100%);
+     }
+     to{
+         transform: translateX(0%);
+     }
+ }
+
+.lightMode{
+    background: url(./assets/light-background.png) beige;
+    background-size: cover;
+    transition: background-color 0.3s ease-in-out  !important;
+}
+
+
+.lightMode .slider {
+    background-color: rgba(255, 199, 199, 0.834);
+    margin: auto;
+    margin-left: 4px;
+    animation: translate 0.3s linear;
+}
+
+.lightMode .light-mode-button{
+    background-image: linear-gradient(to left, rgb(255, 213, 244), rgb(255, 168, 168));
+    
+}
+
+.lightMode .slider{
+    background-color: white;
+}
+
+.lightMode .text{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.lightMode .card{
+    background-image: white !important;
+    border: none;
+    border-radius: 5px;
+}
+
+.lightMode .card-body{
+    background-image: linear-gradient(to top, rgb(255, 218, 224), white)!important;
+    border-radius: 5px;
+}
+
+.lightMode .shadow{
+    color: rgb(68, 32, 38) !important;
+}
+
+.lightMode .background{
+    background-color: rgb(255, 224, 224)!important;
+    opacity: 100%!important;
+}
+
+.lightMode .form-group{
+    background-color: rgb(255, 224, 224)!important;
+    opacity: 100%!important;
+}
+
+.lightMode .form-control{
+    background-color: rgb(255, 224, 224)!important;
+    opacity: 100%!important;
+}
+
+.lightMode .btn-outline-info{
+    background-color: rgb(255, 224, 224);
+    opacity: 100%!important;
+}
+
+.lightMode .card-body{
+    opacity: 100% !important;
+}
+
+.lightMode .text-light{
+    color: black !important;
+}
+
+.lightMode .bg-black{
+    background-color: rgb(255, 224, 224) !important;
+}
+
 /*.my-5{
     margin-top: ($spacer * .25) !important;
     margin-bottom: ($spacer * .25) !important;

@@ -24,8 +24,8 @@ function saveTask(e){
         }
         getTasks();
         document.getElementById('formTask').reset();
-        e.preventDefault();
     }   
+    e.preventDefault();
 }
 
 function generateId(){
@@ -152,6 +152,14 @@ function markDone(id){
 getTasks();
 
 getDoneTasks();
+
+const lightModeButton = document.getElementById('lightModeButton');
+
+lightModeButton.addEventListener('click', ()=>{
+    const body = document.body;
+    body.classList.toggle('lightMode');
+    
+})
 
 
 
