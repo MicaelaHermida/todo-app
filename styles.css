@@ -161,7 +161,27 @@ body{
     background-color: rgb(255, 224, 224) !important;
 }
 
-/*.my-5{
-    margin-top: ($spacer * .25) !important;
-    margin-bottom: ($spacer * .25) !important;
-}*/
+@media only screen and (max-width: 767px){
+    .taskDescription{
+        font-size: 16pt;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(142, 142, 142);
+    }
+    .title-text{
+        font-family: 'Bungee Shade', cursive;
+        font-size: 50pt;
+        color: rgba(242, 226, 255, 0.51); text-shadow: 2px 2px rgba(0, 0, 0, 0.436)
+    }
+    .task-mobile{
+        width: 100%;
+        
+    }
+    .container-mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-invicible{
+        opacity: 0%;
+    }
+}

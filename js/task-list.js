@@ -65,7 +65,7 @@ function getTasks(){
             let description = tasks[i].description;
             let id = tasks[i].id;
             //accedo al html de tasks
-            tasksView.innerHTML += `<div class="card mb-3 bg-dark shadow-lg"> 
+            tasksView.innerHTML += `<div class="card mb-3 bg-dark shadow-lg   task-mobile"> 
                 <div class="card-body">
                     <h3 class="text bold">${title}</h3> 
                     <p class="text taskDescription">${description}</p>
@@ -94,7 +94,7 @@ function getDoneTasks(){
             let description = doneTasks[i].description;
             let id = doneTasks[i].id;
 
-            doneTasksView.innerHTML += `<div class="card mb-3 bg-dark opacity-75 shadow-lg"> 
+            doneTasksView.innerHTML += `<div class="card mb-3 bg-dark opacity-75 shadow-lg   task-mobile"> 
             <div class="card-body">
                 <h3 class="text bold">${title}</h3> 
                 <p class="text taskDescription">${description}</p>
